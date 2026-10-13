@@ -14,7 +14,7 @@
         Parágrafo
     </p>
 
-    <button type="button" onclick="this.style.transform = this.style.transform ? '' : 'translateY(9px)'; this.style.boxShadow = this.style.transform ? '0 0 #666' : '0 9px #999';" style="box-shadow:0 9px #999; background:#99f3ff; border:0; padding:10px 20px; font-size:17px; cursor:pointer;">
+    <button type="button" onclick="this.style.transform = 'translateY(9px)'; this.style.boxShadow = '0 0 #666'; setTimeout(() => { this.style.transform = ''; this.style.boxShadow = '0 9px #999'; }, 150);" onmouseover="this.style.background = '#c2f8ff';" onmouseout="this.style.background = '#99f3ff';" style="box-shadow:0 9px #999; background:#99f3ff; border:0; padding:10px 20px; font-size:17px; cursor:pointer; transition:transform 0.1s, box-shadow 0.1s;">
         Seu botão aqui
     </button>
 
