@@ -14,7 +14,7 @@
         Parágrafo
     </p>
 
-    <button type="button" onclick="this.textContent = 'Clicado!';" style="box-shadow:0 9px #999; background:#99f3ff; border:0; padding:10px 20px; font-size:17px; cursor:pointer;">
+    <button type="button" onclick="this.style.transform = this.style.transform ? '' : 'translateY(9px)'; this.style.boxShadow = this.style.transform ? '0 0 #666' : '0 9px #999';" style="box-shadow:0 9px #999; background:#99f3ff; border:0; padding:10px 20px; font-size:17px; cursor:pointer;">
         Seu botão aqui
     </button>
 
